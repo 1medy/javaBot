@@ -31,10 +31,11 @@ public class Bot {
     private static JDA jda;
 
     private static JDABuilder builder;
-    private static AbstractLogWriter logWriter;
     private static ActionHandler actionHandler;
+    private static AbstractLogWriter logWriter;
+    
     public static AbstractLogWriter getLogWriter() { return logWriter; }
-
+    
     public static ActionResult performAction(String[] args, MessageReceivedEvent event) {
         return actionHandler.performAction(args, event);
     }
